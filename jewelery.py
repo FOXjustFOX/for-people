@@ -1,27 +1,27 @@
 n = int(input())
-jewels = []
+bizuteria = []
 
 for i in range(n):
-    jewels.append(input())
+    bizuteria.append(input())
 
-jewels.sort(key= lambda x: (len(x) + 1) ** 15 + ord(x[0]))
+bizuteria.sort(key= lambda x: (len(x) + 1) ** 15 + ord(x[0]))
 
-for i in range(len(jewels)):
+for i in range(len(bizuteria)):
     try:
-        jewel = jewels[i]
-        nexjewel = jewels[i+1]
+        bizuter = bizuteria[i]
+        nastepny_bizuter = bizuteria[i + 1]
     except IndexError:
         pass
     else:
-        if len(jewel) == len(nexjewel):
+        if len(bizuter) == len(nastepny_bizuter):
             j = 0
-            while jewel[j] == nexjewel[j]:
+            while bizuter[j] == nastepny_bizuter[j]:
                 j+=1
 
             else:
-                if ord(jewel[j]) > ord(nexjewel[j]):
-                    jewels[i], jewels[i+1] = nexjewel, jewel
+                if ord(bizuter[j]) > ord(nastepny_bizuter[j]):
+                    bizuteria[i], bizuteria[i + 1] = nastepny_bizuter, bizuter
 
 
-for jewel in jewels:
-    print(jewel)
+for bizuter in bizuteria:
+    print(bizuter)
