@@ -1,4 +1,4 @@
-# Witam poniżej znajdują się rozwiązania paru zadań
+# Witam powyżej znajdują się rozwiązania paru zadań
 
-## napisane przez Igor Lis 3C
-###### i może innych
+## Napisane przez Igor Lis 3C
+###### I może innych
